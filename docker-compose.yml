@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testeapi:
+    image: ${DOCKER_REGISTRY-}testeapi
+    build:
+      context: .
+      dockerfile: TesteApi/Dockerfile
